@@ -5,7 +5,6 @@ Vue.use(Router)
 
 import Login from '../pages/login.vue'
 import Index from '../pages/index.vue'
-import MoreLists from '../pages/newlists/moreLists.vue'
 import Lists from '../pages/newlists/newlists.vue'
 import Information from '../pages/newlists/information.vue'
 import SearchPro from '../pages/project/searchPro.vue'
@@ -52,14 +51,6 @@ const router = new Router({
         component: Index,
         meta: {
             title: '首页'
-        }
-    },
-    {
-        path: '/moreLists',
-        name: 'moreLists',
-        component: MoreLists,
-        meta: {
-            title: '信息列表'
         }
     },
     {

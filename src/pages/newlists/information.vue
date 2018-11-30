@@ -30,10 +30,14 @@ export default {
     }
 };
 </script>
-<style lang="less" scoped>
+<style lang="less">
 #information_page {
     padding: 0 5px;
     background: #ffffff;
+    overflow: hidden;
+    img{
+        width: 100% !important;
+    }
     h5 {
         text-align: center;
         padding: 16px 0;
@@ -43,6 +47,10 @@ export default {
         color: #999;
         font-size: 13px;
         padding-bottom: 15px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 26px;
     }
 }
 </style>
