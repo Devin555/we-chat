@@ -9,7 +9,6 @@
         <mt-tab-container v-model="selected">
             <mt-tab-container-item id="1">
                 <!-- 监测点列表 -->
-                <!-- <Search placeholder='请输入站点名称关键字'></Search> -->
                 <div class="listSearch">
                     <x-input v-model="proName" style="font-size:10px" placeholder="请输入站点名称关键字"></x-input>
                     <x-button :gradients="['#1D62F0', '#19D5FD']" @click.native="search">查询</x-button>
@@ -100,6 +99,12 @@
             });
         },
         methods: {
+            search() {
+                let params = {name:this.proName}
+                monitorAllData(params).then(response => {
+                    this.dataLists = response.data;
+                });
+            },
             // 跳转到监测点详情
             toSschart(siteId) {
                 this.$router.push({

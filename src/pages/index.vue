@@ -16,7 +16,7 @@
             <span class="xxlb">信息列表</span>
             <span class="moreTip" @click="toMoreLists(0)">更多&nbsp;<img src="../../static/images/index/more.png"></span>
         </div>
-        <!-- 图表信息(公用组建) -->
+        <!-- 图表信息(公用组件) -->
         <com-lists></com-lists>
         <!-- 菜单 -->
         <tabbar>

@@ -21,6 +21,7 @@ import Four from '../pages/404/404.vue'
 
 //进行路由的懒加载过程
 const router = new Router({
+    // mode: 'history',
     routes: [{
         path: '/login',
         name: 'login',
